@@ -14,8 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var pass1 = findViewById<EditText>(R.id.passinput).text.toString()
-        var pass2 = findViewById<EditText>(R.id.passinput2).text.toString()
+
         val check = findViewById<Button>(R.id.button)
         val textm = findViewById<TextView>(R.id.matchT)
         val text = findViewById<TextView>(R.id.Cap)
@@ -27,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
 
         check.setOnClickListener {
+            var pass1 = findViewById<EditText>(R.id.passinput).text.toString()
+            var pass2 = findViewById<EditText>(R.id.passinput2).text.toString()
 
             if (regexC.matches(pass1)) {
                 text.setTextColor(Color.parseColor("#59FF11"))
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
 
             if(pass1==pass2){
                 textm.setTextColor(Color.parseColor("#59FF11"))
+
             }
             else{
                 textm.setTextColor(Color.parseColor("#FF0000"))
