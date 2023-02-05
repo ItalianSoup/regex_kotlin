@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-
+//maciej zdrojewski
 class MainActivity : AppCompatActivity() {
 
     @SuppressLint("ResourceAsColor")
